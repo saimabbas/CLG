@@ -556,6 +556,28 @@
           display: "none",
         });
       });
+
+      var swiper = new Swiper(".scs-swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".scs-right",
+          prevEl: ".scs-left",
+        },
+        slidesPerView: 1,
+        spaceBetween: 25,
+        /* autoplay: {
+          delay: 2500,
+        }, */
+        breakpoints: {
+          900: {
+            slidesPerView: 2,
+          },
+        },
+      });
+      Fancybox.bind('[data-fancybox="gallery"]', {});
+      Fancybox.bind('[data-fancybox="gallery2"]', {});
     </script>
   </body>
 </html>
