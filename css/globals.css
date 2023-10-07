@@ -354,7 +354,7 @@ footer {
   left: 0;
   background-color: var(--bg-green-1);
   z-index: 20000;
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .cookies-content {
@@ -362,8 +362,6 @@ footer {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   grid-gap: 3.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 .cookies-content h3 {
   font-size: 2.5rem;
@@ -376,8 +374,12 @@ footer {
 }
 .cookies-content p {
   width: 100%;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   color: var(--dark-green);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
 }
 .cookies-content p a {
   font-size: 1.65rem;
@@ -388,7 +390,7 @@ footer {
   font-size: 2.5rem;
   position: absolute;
   top: 2.5rem;
-  right: 2.5rem;
+  right: 1.5rem;
   color: var(--dark-green);
   opacity: 0.5;
   transition: 0.35s;
@@ -443,6 +445,12 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .cookies-content p {
+    display: inline;
+  }
+  .cookies-content h3 {
+    font-size: 2rem;
+  }
   .header-content img {
     height: 3.5rem;
   }
