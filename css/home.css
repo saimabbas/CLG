@@ -1,0 +1,568 @@
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  background-color: var(--bg-green-1);
+}
+.hero-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  grid-gap: 12.5rem;
+  padding: 10rem 0;
+}
+.hero-left {
+  width: 100%;
+}
+.hero-left h6 {
+  font-size: 1.75rem;
+  color: var(--parrot-green);
+  font-weight: 500;
+}
+.hero-left h1 {
+  font-size: 10em;
+  line-height: 11rem;
+  color: var(--dark-green);
+  font-weight: 700;
+  margin: 3.5rem 0;
+}
+.hero-left h1 span {
+  position: relative;
+  display: block;
+  width: max-content;
+}
+.hero-left h1 i {
+  font-style: normal;
+}
+.hero-left h1 svg {
+  width: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.hero-left p {
+  font-size: 2rem;
+  color: var(--dark-green);
+  font-weight: 400;
+  margin: 0 0 3.5rem 0;
+}
+.hero-left > a {
+  color: var(--parrot-green);
+  text-decoration: none;
+}
+.hero-right {
+  width: 100%;
+}
+.hero-right img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+/* Featured Section */
+.featured-section {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: var(--dark-green);
+}
+.features-grid {
+  width: max-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 9rem;
+}
+.features-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.shield-box {
+  width: 13.5rem;
+  height: 13.5rem;
+  position: relative;
+}
+.shield-box img {
+  height: 100%;
+  object-fit: contain;
+}
+.shield-box span {
+  font-size: 3.5rem;
+  color: var(--white);
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.features-card h3 {
+  font-size: 2.25rem;
+  color: var(--parrot-green);
+  font-weight: 600;
+  margin: 3.5rem 0;
+}
+.features-card p {
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+/* Services Section */
+.services-section {
+  width: 100%;
+  padding: 10rem 0;
+}
+.services-grid {
+  width: 100%;
+  max-width: 85rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3.5rem;
+}
+.services-card {
+  width: 100%;
+  padding: 3.5rem;
+  border-radius: 1rem;
+  border: 2px solid var(--parrot-green);
+  background-color: var(--bg-green-0);
+}
+.services-card img {
+  height: 6.5rem;
+  object-fit: contain;
+}
+.services-card h3 {
+  font-size: 2.5rem;
+  color: var(--parrot-green);
+  margin: 2.5rem 0 0.25rem 0;
+  white-space: nowrap;
+}
+.services-card span {
+  font-size: 1.75rem;
+  color: var(--black);
+  opacity: 0.5;
+}
+.services-card p {
+  font-size: 1.5rem;
+  color: var(--black);
+  opacity: 0.65;
+  margin: 3.5rem 0 2.5rem 0;
+}
+.services-card a {
+  font-size: 1.75rem;
+  color: var(--black);
+  opacity: 0.85;
+}
+
+/* Stats Section */
+.stats-section {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: var(--dark-green);
+}
+.stats-content {
+  width: 100%;
+  max-width: 85rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: center;
+}
+.stats-box {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stats-box h3 {
+  font-size: 5rem;
+  color: var(--neon-green);
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+.stats-box p {
+  font-size: 1.75rem;
+  color: var(--white);
+  font-weight: 300;
+  width: min-content;
+  margin: 0 0 1rem 0;
+}
+
+/* Case Studies Section */
+.casestudies-section {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: var(--bg-green-2);
+}
+.casestudies-section .section-heading {
+  color: var(--dark-green);
+}
+.casestudies-grid {
+  width: max-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  grid-gap: 3.5rem;
+}
+.casestudies-grid-card {
+  width: 100%;
+}
+.casestudies-grid-card > img {
+  width: 30rem;
+  min-height: 30rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.csgc-details {
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+.csgc-details h3 {
+  width: min-content;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: var(--dark-green);
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+}
+.csgc-details a {
+  font-size: 1.5rem;
+  color: var(--black);
+  opacity: 0.65;
+}
+.casestudy-tag {
+  height: 4.5rem;
+  object-fit: contain;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+/* Get Back on Track Section */
+.getbackontrack-section {
+  width: 100%;
+  padding: 10rem 0;
+}
+.getbackontrack-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.getbackontrack-content iframe {
+  width: 100%;
+  height: 60rem;
+  max-width: 1150px;
+  border-radius: 1rem;
+  margin: 0 auto 10rem auto;
+}
+.getbackontrack-content h5 {
+  font-size: 2.5rem;
+  color: var(--parrot-green);
+  font-weight: 600;
+  margin: 0 0 5rem 0;
+  text-align: center;
+}
+.asseenon-grid {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.asseenon-grid img {
+  height: 5.5rem;
+  object-fit: contain;
+}
+
+/* Freedom Section */
+.freedom-section {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: var(--dark-green);
+}
+.freedom-section .section-heading {
+  color: var(--neon-green);
+  margin: 0;
+}
+.freedom-content > p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0 7.5rem 0;
+  color: var(--white);
+}
+.freedom-grid {
+  width: max-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 9rem;
+}
+.freedom-grid-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.freedom-grid-card img {
+  width: 15rem;
+  margin: 0 0 2.5rem 0;
+}
+.freedom-grid-card h3 {
+  font-size: 4rem;
+  color: var(--neon-green);
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+.freedom-grid-card p {
+  font-size: 1.75rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+/* youcan-section */
+.youcan-section {
+  width: 100%;
+  padding: 10rem 0;
+}
+.youcan-content {
+  width: 100%;
+  background-color: var(--parrot-green);
+  border-radius: 2.5rem;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.youcan-content svg {
+  width: 350px;
+  object-fit: contain;
+  position: absolute;
+  bottom: -7.5rem;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+}
+.youcan-box {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.youcan-box h2.section-heading {
+  color: var(--dark-green);
+  margin: 0;
+}
+.youcan-box p {
+  font-size: 2rem;
+  color: var(--white);
+  margin: 2.5rem 0;
+}
+.youcan-box h2 span {
+  position: relative;
+}
+.youcan-box h2 span img {
+  width: 125%;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media screen and (max-width: 1250px) {
+  .hero-content {
+    grid-template-columns: 1fr 450px;
+    grid-gap: 7.5rem;
+  }
+  .youcan-content svg {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .hero-content {
+    grid-template-columns: 1fr 350px;
+    grid-gap: 5rem;
+  }
+  .hero-left h1 {
+    font-size: 7.5em;
+    line-height: 8.5rem;
+    margin: 2.5rem 0;
+  }
+  .hero-left p {
+    font-size: 1.75rem;
+  }
+  .hero-left h6 {
+    font-size: 1.5rem;
+  }
+  .freedom-grid,
+  .casestudies-grid,
+  .features-grid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+  .casestudies-grid-card > img {
+    width: 100%;
+    min-height: 25rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .youcan-section,
+  .freedom-section,
+  .casestudies-section,
+  .stats-section,
+  .services-section,
+  .getbackontrack-section,
+  .featured-section {
+    padding: 5rem 0;
+  }
+  .freedom-grid-card p,
+  .youcan-box p,
+  .stats-box p,
+  .services-card p,
+  .hero-left p {
+    font-size: 1.65rem;
+  }
+  .services-card span {
+    font-size: 1.5rem;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    padding: 5rem 0;
+  }
+  .hero-left h1 {
+    font-size: 6em;
+    line-height: 7rem;
+    margin: 2.5rem 0;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 7.5rem;
+  }
+  .features-card h3 {
+    margin: 0 0 1rem 0;
+  }
+  .section-heading {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 0 0 5rem 0;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-card {
+    padding: 2.5rem;
+  }
+  .services-card h3 {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  .services-card p {
+    margin: 2.5rem 0;
+  }
+  .stats-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+  .stats-box {
+    width: 100%;
+  }
+  .stats-box h3 {
+    font-size: 3rem;
+  }
+  .stats-box p {
+    margin: 0;
+  }
+  .casestudies-grid {
+    grid-template-columns: 1fr;
+  }
+  .casestudies-grid-card {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .getbackontrack-content iframe {
+    height: 20rem;
+    margin: 0 0 7.5rem 0;
+  }
+  .asseenon-grid img {
+    height: 3rem;
+  }
+  .getbackontrack-content h5 {
+    margin: 0 0 2.5rem 0;
+  }
+  .freedom-content > p {
+    font-size: 1.85rem;
+  }
+  .freedom-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 7.5rem;
+  }
+  .features-card,
+  .freedom-grid-card {
+    width: 100%;
+    display: grid;
+    grid-gap: 0 2.5rem;
+    grid-template-columns: 7.5rem 1fr;
+    grid-template-rows: max-content max-content;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .shield-box {
+    height: unset;
+  }
+  .features-card .shield-box {
+    width: 100%;
+    grid-row: 1/-1;
+    margin: 0;
+    object-fit: contain;
+    height: max-content;
+  }
+  .services-card img,
+  .freedom-grid-card img {
+    width: 100%;
+    grid-row: 1/-1;
+    margin: 0;
+    object-fit: contain;
+  }
+  .services-card div {
+    width: 100%;
+    display: grid;
+    grid-gap: 0 2.5rem;
+    grid-template-columns: 6rem 1fr;
+    grid-template-rows: max-content max-content;
+    grid-template-rows: 3rem 3rem;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .youcan-content {
+    padding: 5rem 2.5rem;
+  }
+  .youcan-box p {
+    margin: 5rem 0;
+  }
+  .youcan-content svg {
+    width: 200px;
+    opacity: 0.75;
+    bottom: -12.5rem;
+  }
+  .freedom-grid-card h3 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,139 @@
+:root {
+  font-size: 10px;
+  --white: #fff;
+  --black: #000;
+  --dark-green: #17402b;
+  --dark-green-2: #40b591;
+  --parrot-green: #70d461;
+  --neon-green: #94d600;
+  --bg-green-0: #f6fcf8;
+  --bg-green-1: #e7f5f1;
+  --bg-green-2: #d1eddb;
+}
+.blog-section {
+  width: 100%;
+  padding: 0 0 10rem 0;
+}
+.blog-section > img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  margin: 0 0 5rem 0;
+}
+.blog-section h1 {
+  font-size: 5rem;
+  color: var(--dark-green);
+  font-weight: 700;
+  margin: 0 0 3.5rem 0;
+}
+.blog-content {
+  width: 100%;
+  max-width: 85rem;
+  margin: 0 auto;
+}
+.blog-section h2 {
+  font-size: 2.5rem;
+  color: var(--parrot-green);
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+.blog-section h3 {
+  font-size: 1.85rem;
+  color: var(--dark-green-2);
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+}
+.blog-section h4 {
+  font-size: 1.5rem;
+  color: var(--dark-green-2);
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+  text-decoration: underline;
+}
+.blog-section p {
+  font-size: 1.65rem;
+  color: var(--black);
+}
+.blog-section ul {
+  padding: 0;
+}
+.blog-section ul ul {
+  padding: 0 0 0 2.5rem;
+}
+.blog-section li {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin: 0 0 0.5rem 0;
+  list-style-type: none;
+}
+.blog-section li b {
+  font-weight: 600;
+  color: var(--neon-green);
+}
+.blog-section li::before {
+  content: "+ ";
+  margin: 0 0.5rem 0 0;
+  color: var(--dark-green-2);
+}
+.blog-content > img {
+  width: 100%;
+  object-fit: contain;
+  max-width: 500px;
+  margin: 2.5rem 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.share-blog {
+  width: 100%;
+  padding: 3.5rem;
+  background-color: var(--bg-green-1);
+  border-radius: 1.5rem;
+}
+.share-blog > div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.5rem 0 0 0;
+}
+
+.share-blog > div a {
+  font-size: 2.5rem;
+  color: var(--dark-green);
+  margin: 0 2.5rem 0 0;
+}
+
+.blog-section .tpc-content h1 {
+  margin: 7.5rem 0 3.5rem 0;
+}
+.tpc-content p {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+}
+.blog-section .tpc-content ul {
+  margin: 0 0 2.5rem 0;
+}
+.blog-section .tpc-content h4 {
+  margin: 1rem 0;
+  font-size: 1.65rem;
+}
+.blog-section .tpc-content h3 {
+  font-size: 2.25rem;
+}
+.tpc-content a {
+  color: var(--dark-green-2) !important;
+}
+@media screen and (max-width: 900px) {
+  .blog-section > img {
+    height: 20rem;
+    margin: 0 0 3.5rem 0;
+  }
+  .blog-section h1 {
+    font-size: 2.5rem;
+  }
+  .blog-section h2 {
+    font-size: 2rem;
+  }
+  .share-blog {
+    padding: 2.5rem;
+  }
+}

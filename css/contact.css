@@ -1,0 +1,140 @@
+:root {
+  font-size: 10px;
+  --white: #fff;
+  --black: #000;
+  --dark-green: #17402b;
+  --dark-green-2: #40b591;
+  --parrot-green: #70d461;
+  --neon-green: #94d600;
+  --bg-green-0: #f6fcf8;
+  --bg-green-1: #e7f5f1;
+  --bg-green-2: #d1eddb;
+}
+
+.contact-section {
+  width: 100%;
+}
+.contact-content {
+  width: 100%;
+  padding: 7.5rem 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contact-content h1 {
+  font-size: 6.5rem;
+  font-weight: 700;
+  color: var(--dark-green-2);
+}
+.contact-grid {
+  width: 100%;
+  margin: 7.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-gap: 7.5rem;
+}
+.contact-grid-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact-grid-right {
+  width: 100%;
+}
+.contact-grid-right img {
+  width: 100%;
+  object-fit: contain;
+  margin: 0 0 5rem 0;
+}
+.contact-details-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 2.5rem 0;
+}
+.contact-details-box span {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--dark-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: var(--neon-green);
+  border-radius: 50%;
+  margin: 0 1.5rem 0 0;
+}
+.contact-details-box p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-green) !important;
+}
+.refer-box {
+  width: 100%;
+  padding: 3.5rem;
+  background-image: url("../assets/img/refer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: left;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin: 10rem 0 0 0;
+}
+.refer-box > div {
+  width: 100%;
+}
+.refer-box h2 {
+  color: var(--parrot-green);
+  font-size: 5rem;
+  line-height: 6rem;
+  margin: 0 0 1.5rem 0;
+  font-weight: 700;
+}
+.refer-box p {
+  font-size: 1.75rem;
+  color: var(--white);
+}
+.refer-box > button {
+  min-width: 175px;
+  max-width: 175px;
+  margin: 0 0 0 2.5rem;
+  height: max-content;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    margin: 5rem 0 0 0;
+  }
+  .contact-content {
+    padding: 5rem 0;
+  }
+  .contact-content h1 {
+    font-size: 3.5rem;
+  }
+  .refer-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem;
+  }
+  .refer-box h2 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+  .refer-box > button {
+    width: 100%;
+    margin: 5rem 0 0 0;
+  }
+}
