@@ -123,6 +123,8 @@
   .casestudies-grid {
     grid-template-columns: 1fr;
     grid-gap: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .backto {
     margin: 0 0 5rem 0;

@@ -151,7 +151,7 @@ header {
   justify-content: space-between;
 }
 .header-content img {
-  height: 5rem;
+  height: 5.5rem;
   object-fit: contain;
 }
 .header-right {
@@ -270,7 +270,7 @@ footer {
 .footer-disclaimer {
   width: 100%;
   margin: 5rem 0 0 0;
-  font-size: 1.35rem;
+  font-size: 1rem;
   color: var(--black);
   opacity: 0.5;
 }
@@ -475,6 +475,8 @@ footer {
   .footer-links {
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
   }
   .footer-right a {
     margin: 0 2.5rem 1.5rem 0;

@@ -48,10 +48,13 @@
 .contact-grid-right {
   width: 100%;
 }
-.contact-grid-right img {
+.contact-grid-right > a > img {
   width: 100%;
   object-fit: contain;
   margin: 0 0 5rem 0;
+}
+.contact-grid-right > a {
+  width: 100%;
 }
 .contact-details-box {
   width: 100%;

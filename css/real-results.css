@@ -258,13 +258,11 @@
 .scs-videos-grid {
   width: 100%;
   padding: 10rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2.5rem;
+  max-width: 85rem;
 }
 .scs-videos-grid iframe {
   width: 100%;
-  height: 25rem;
+  height: 50rem;
   border-radius: 1.5rem;
 }
 .trustpilot-widget {
@@ -274,6 +272,9 @@
   display: none;
 }
 @media screen and (max-width: 900px) {
+  .scs-videos-grid iframe {
+    height: unset;
+  }
   .db-grid-2-card {
     padding: 2rem;
     margin: 0 0 2.5rem 0;

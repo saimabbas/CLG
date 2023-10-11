@@ -23,7 +23,7 @@ let landingAnim = gsap.timeline({
   delay: 1,
 });
 landingAnim
-  .from(heroH1.lines, {
+  /* .from(heroH1.lines, {
     opacity: "0",
     duration: 0.75,
     y: "5rem",
@@ -31,7 +31,7 @@ landingAnim
     stagger: {
       each: 0.15,
     },
-  })
+  }) */
   .from("#fight-line", {
     duration: 0.75,
     drawSVG: 0,
@@ -62,7 +62,7 @@ featuresAnim.from(".features-card", {
   duration: 1,
 });
 
-let servicesAnim = gsap.timeline({
+/* let servicesAnim = gsap.timeline({
   scrollTrigger: {
     trigger: ".services-grid",
     start: "top 85%",
@@ -73,7 +73,7 @@ servicesAnim.from(".services-card", {
   y: "5rem",
   stagger: 0.15,
   duration: 1,
-});
+}); */
 
 let caseStudiesAnim = gsap.timeline({
   scrollTrigger: {

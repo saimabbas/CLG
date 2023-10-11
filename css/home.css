@@ -17,6 +17,7 @@
   font-size: 1.75rem;
   color: var(--parrot-green);
   font-weight: 500;
+  letter-spacing: 2px;
 }
 .hero-left h1 {
   font-size: 10em;
@@ -39,6 +40,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -55%);
+  z-index: 10;
 }
 .hero-left p {
   font-size: 2rem;
@@ -123,12 +125,23 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 3.5rem;
 }
+.services-grid a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
 .services-card {
   width: 100%;
   padding: 3.5rem;
   border-radius: 1rem;
   border: 2px solid var(--parrot-green);
   background-color: var(--bg-green-0);
+  cursor: pointer;
+  transition: 0.35s;
+}
+.services-card:hover {
+  transform: scale(1.025) !important;
 }
 .services-card img {
   height: 6.5rem;
@@ -151,10 +164,12 @@
   opacity: 0.65;
   margin: 3.5rem 0 2.5rem 0;
 }
-.services-card a {
+.services-card h6 {
+  font-weight: 400;
   font-size: 1.75rem;
   color: var(--black);
   opacity: 0.85;
+  text-decoration: underline;
 }
 
 /* Stats Section */
@@ -318,16 +333,19 @@
   width: 15rem;
   margin: 0 0 2.5rem 0;
 }
-.freedom-grid-card h3 {
-  font-size: 4rem;
-  color: var(--neon-green);
-  margin: 0 0 1rem 0;
-  font-weight: 500;
-}
 .freedom-grid-card p {
   font-size: 1.75rem;
   color: var(--white);
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.freedom-grid-card p b {
+  font-size: 4rem;
+  color: var(--neon-green);
+  margin: 0 0 1rem 0;
+  font-weight: 500;
 }
 
 /* youcan-section */
@@ -407,6 +425,7 @@
   }
   .hero-left h6 {
     font-size: 1.5rem;
+    letter-spacing: 1px;
   }
   .freedom-grid,
   .casestudies-grid,
@@ -440,6 +459,9 @@
   .services-card span {
     font-size: 1.5rem;
   }
+  .freedom-grid-card p {
+    display: inline;
+  }
   .hero-content {
     grid-template-columns: 1fr;
     padding: 5rem 0;
@@ -455,6 +477,7 @@
   }
   .features-card h3 {
     margin: 0 0 1rem 0;
+    font-size: 2rem;
   }
   .section-heading {
     font-size: 3rem;
@@ -564,5 +587,9 @@
   }
   .freedom-grid-card h3 {
     margin: 0;
+  }
+  .shield-box img {
+    width: 100%;
+    height: max-content;
   }
 }
