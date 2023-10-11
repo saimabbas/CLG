@@ -35,19 +35,7 @@ landingAnim
   .from("#fight-line", {
     duration: 0.75,
     drawSVG: 0,
-  })
-  .fromTo(
-    ".hero-right img",
-    {
-      height: 0,
-    },
-    {
-      height: "100%",
-      duration: 2,
-      ease: Power4.easeInOut,
-    },
-    "0.5"
-  );
+  });
 
 let featuresAnim = gsap.timeline({
   scrollTrigger: {
