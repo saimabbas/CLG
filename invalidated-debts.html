@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/real-results.css" />
     <title>CLG</title>
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <main class="clg">
@@ -360,6 +365,12 @@
       });
       Fancybox.bind('[data-fancybox="gallery"]', {});
       Fancybox.bind('[data-fancybox="gallery2"]', {});
+
+      $(document).ready(function () {
+        $(".db-grid-2-card-img span").on("click", function () {
+          $(this).siblings("img").trigger("click");
+        });
+      });
     </script>
     <script src="js/script.js"></script>
   </body>

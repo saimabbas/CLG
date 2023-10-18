@@ -198,7 +198,7 @@ footer {
   width: 100%;
   padding: 0 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 400px 1fr;
   grid-gap: 2.5rem;
 }
 .footer-content > a {
@@ -398,6 +398,20 @@ footer {
 }
 .cookies-section span:hover {
   opacity: 1;
+}
+
+.backto {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.65rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 7.5rem 0;
+}
+.backto i {
+  margin: 0 1rem 0 0;
+  color: var(--dark-green-2);
 }
 @media screen and (max-width: 1300px) {
   .box {
