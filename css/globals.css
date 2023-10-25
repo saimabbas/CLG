@@ -413,6 +413,10 @@ footer {
   margin: 0 1rem 0 0;
   color: var(--dark-green-2);
 }
+.btn-primary {
+  background-color: #17402b !important;
+  border-color: #17402b !important;
+}
 @media screen and (max-width: 1300px) {
   .box {
     padding: 0 5rem;

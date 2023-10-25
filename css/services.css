@@ -122,11 +122,16 @@
 .solution-box {
   width: 100%;
   margin: 0 0 7.5rem 0;
-  padding: 0 0 7.5rem 0;
+  padding: 2.5rem 0 7.5rem 0;
 }
-.solution-box.solution-box-4 {
+.bac-page .solution-box {
+  width: 100%;
+  margin: 0 0 7.5rem 0;
+  padding: 2.5rem 0 0 0;
+}
+.solution-box.solution-box-5 {
   margin: 0;
-  padding: 0;
+  padding: 2.5rem 0 0 0;
   border-bottom: 0 solid rgba(64, 181, 146, 0.35);
 }
 .sb-grid {
@@ -294,7 +299,11 @@ p.small-p {
   left: 50%;
   transform: translate(-50%, 0);
 }
-
+.buy-now-btn {
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+}
 @media screen and (max-width: 1250px) {
   .sb-grid {
     grid-template-columns: 1fr 250px;
