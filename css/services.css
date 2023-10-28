@@ -187,6 +187,9 @@
   font-size: 1.5rem;
   color: var(--black);
 }
+.solution-box p b {
+  font-weight: 600;
+}
 .solution-box h4 {
   font-size: 2.25rem;
   color: var(--dark-green-2);
